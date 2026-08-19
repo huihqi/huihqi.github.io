@@ -29,22 +29,41 @@ a {
 }
 
 .page {
+
   width: min(1440px, 100%);
+
   min-height: 100vh;
+
   margin: 0 auto;
+
   display: grid;
-  grid-template-columns: 390px 1fr;
-  background: var(--panel);
+
+  grid-template-columns: 430px 1fr;
+
+  background: var(--bg);
+
 }
 
 .sidebar {
+
   min-height: 100vh;
+
   padding: 54px 38px 44px;
+
   text-align: center;
-  border-right: 1px solid var(--line);
+
+  border: 1px solid var(--line);
+
+  background: #fbfaf8;
+
   position: sticky;
+
   top: 0;
+
   align-self: start;
+
+  margin: 40px 0 40px 38px;
+
 }
 
 .profile-wrap {
