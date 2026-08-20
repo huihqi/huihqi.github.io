@@ -9,38 +9,7 @@
 </head>
 <body>
   <div class="page">
-    <aside class="sidebar">
-      <div class="profile-wrap">
-        <img class="profile-photo" src="assets/profile-placeholder.svg" alt="Huihui Qi">
-      </div>
-
-      <h1 class="name">Huihui Qi</h1>
-      <p class="email">your-email@university.edu</p>
-
-      <div class="affiliation">
-        <p>Kebschull Lab</p>
-        <p>Department of Biomedical Engineering</p>
-        <p>Johns Hopkins University</p>
-      </div>
-
-      <div class="social-links">
-        <a href="https://scholar.google.com/citations?hl=en&user=VuG9_HAAAAAJ&view_op=list_works&sortby=pubdate"
-           aria-label="Google Scholar"
-           target="_blank">
-            <i class="ai ai-google-scholar"></i>
-        </a>
-        <a href="#" aria-label="CV">CV</a>
-        <a href="#" aria-label="GitHub">GH</a>
-        <a href="#" aria-label="LinkedIn">in</a>
-      </div>
-
-      <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="Research.html">Research</a>
-        <a class="active" href="publications.html">Publications</a>
-        
-      </nav>
-    </aside>
+  <div id="sidebar-container"></div>
 
     <main class="content">
       <section>
@@ -76,5 +45,14 @@
       </section>
     </main>
   </div>
+  <script>
+
+fetch("sidebar.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("sidebar-container").innerHTML = data;
+  });
+
+</script>
 </body>
 </html>
