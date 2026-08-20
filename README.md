@@ -5,8 +5,8 @@ This folder contains a simple academic website inspired by the two-column layout
 ## Files
 
 - `index.html` — homepage
+- `Research.html` — research
 - `publications.html` — publications
-- `presentations.html` — conference presentations
 - `style.css` — all styling
 - `assets/profile-placeholder.svg` — replace with your own photo if desired
 
