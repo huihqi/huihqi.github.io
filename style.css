@@ -27,6 +27,14 @@ body {
 a {
   color: inherit;
 }
+.publication {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--accent);
+  margin: 38px 0 10px;
+  line-height: 1.2;
+}
 
 .page {
   width: min(1440px, 100%);
