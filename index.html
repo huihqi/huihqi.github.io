@@ -9,9 +9,16 @@
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
+<script>
+fetch("sidebar.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("sidebar-container").innerHTML = data;
+  });
+</script>
 <body>
   <div class="page">
-   
+  <div id="sidebar-container"></div> 
 
     <main class="content">
       <section>
